@@ -14,7 +14,7 @@ namespace AlgorithmsProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice to Execute the Program Press- 1-Binary Search,2-Bubble sort,3-InsertionShort,4-Exit");
+                Console.WriteLine("Enter your Choice to Execute the Program Press- 1-Binary Search,2-Bubble sort,3-InsertionShort,4-Merge Sort,5-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -37,6 +37,15 @@ namespace AlgorithmsProblems
                         insertionSort.PrintArray(arr);
                         break;
                     case 4:
+                        MergeSort mergeSort = new MergeSort();
+                        int[] arr2= { 33, 55, 22, 999, 66, 11, 99 };
+                        Console.WriteLine("Intial Stage");
+                        mergeSort.PrintArray(arr2);
+                        mergeSort.Sort(arr2,0, arr2.Length - 1);
+                        Console.WriteLine("Finally");
+                        mergeSort.PrintArray(arr2);
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }

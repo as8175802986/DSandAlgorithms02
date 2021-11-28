@@ -14,7 +14,7 @@ namespace AlgorithmsProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Program Press- 1-Binary Search,2-Exit");
+                Console.WriteLine("Enter your Choice to Execute the Program Press- 1-Binary Search,2-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {

@@ -14,7 +14,7 @@ namespace AlgorithmsProblems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice to Execute the Program Press- 1-Binary Search,2-Exit");
+                Console.WriteLine("Enter your Choice to Execute the Program Press- 1-Binary Search,2-Bubble sort,3-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -26,6 +26,11 @@ namespace AlgorithmsProblems
                         BinarySearch.BinarySearchWord(words);
                         break;
                     case 2:
+                        int[] arr1 = { 10, 2, 14, 3, 1, 5, 9 };
+                        BubbleSort.BubbleSortInArray(arr1);
+                        BubbleSort.PrintArray(arr1);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
